@@ -1,0 +1,268 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+  .stripes {
+    background-image: linear-gradient(
+            -45deg,
+            rgba(0, 0, 0, 0.02) 25%,
+            transparent 5% 45%,
+            rgba(0, 0, 0, 0.02) 25% 75%,
+            transparent 55% 95%,
+            rgba(0, 0, 0, 0.02) 95%
+    );
+    background-size: 80px 80px;
+  }
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&display=swap');
+
+.disable-scrollbars::-webkit-scrollbar {
+  background: transparent; /* Chrome/Safari/Webkit */
+  width: 0;
+  height: 0;
+}
+
+.gumroad .cart-button {
+  display: none !important;
+}
+
+.disable-scrollbars {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* IE 10+ */
+}
+
+details > summary {
+  list-style: none;
+}
+
+details summary::-webkit-details-marker {
+  display:none;
+}
+
+.aside-button {
+  @apply inline-flex relative hover:bg-slate-900/5  px-4 w-full py-3 text-base font-medium rounded-full gap-2
+}
+.input-label {
+  @apply block text-base mb-1
+}
+.input {
+  @apply focus:bg-white focus:placeholder:text-black/20 block text-base border border-slate-300 focus:text-black w-full rounded-lg focus:border-blue-400 placeholder:text-black/30 px-2.5 py-1.5 focus:ring-4 sm:text-lg focus:ring-blue-100
+}
+
+.btn-upload-img {
+  @apply flex mb-2 w-full flex-col items-center justify-center rounded-lg border hover:border-teal-200 border-slate-300/80 bg-slate-200/60 p-12 text-center hover:bg-teal-100/20
+}
+.edit_content_window {
+  @apply overflow-y-scroll ring-1 ring-slate-900/[0.07] shadow-2xl shadow-slate-900/20 px-6 sm:p-6 bg-slate-50 disable-scrollbars rounded-2xl fixed z-[999] right-2 bottom-2 max-h-[80vh] sm:w-[70%] md:w-[80%] lg:w-[640px]
+}
+.title {
+  @apply font-bold capitalize md:leading-none mb-2 text-4xl md:text-5xl
+}
+
+.headline-img {
+  @apply w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 ml-auto
+}
+.content-nav-item {
+  @apply cursor-pointer hover:opacity-80 inline-flex gap-1 text-slate-100 font-medium text-sm whitespace-nowrap py-1.5
+}
+.content-nav-item-selected {
+  @apply opacity-50
+}
+
+/*.mask {*/
+/*  mask-image: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 3%, rgba(0,0,0,1) 93%, rgba(0,0,0,0) 100%);*/
+/*}*/
+
+.primary-button {
+  @apply inline-block bg-white hover:bg-white/80 transition duration-200 rounded-full px-12 py-3.5 md:py-5 font-bold text-center text-xl md:text-2xl
+}
+
+.btn {
+  @apply inline-flex items-center gap-3 justify-center transition duration-200 rounded-xl px-6 hover:opacity-90 py-2.5 text-center leading-snug
+}
+.btn.danger {
+    @apply bg-red-500 text-white
+  }
+
+  .btn.ai {
+    @apply bg-purple-500 text-white
+  }
+.btn.danger-secondary {
+    @apply bg-red-200/50 text-red-500
+  }
+.btn.payment {
+    @apply bg-amber-300/80 text-black
+  }
+.btn.secondary.payment {
+    @apply bg-amber-100/80 text-amber-600
+  }
+.btn.primary {
+    @apply bg-blue-600 text-white
+  }
+.btn.secondary {
+    @apply bg-blue-200/40 hover:bg-blue-200/70 text-blue-600
+  }
+
+  .nav-item {
+    @apply flex gap-1.5 flex-col bg-white p-3.5 text-sm text-slate-600 whitespace-nowrap min-w-[112px] hover:bg-white/60 hover:md:translate-x-2 transition-all duration-200 rounded-xl w-36
+  }
+  .nav-item-edit {
+    @apply flex gap-1.5 flex-col bg-blue-600 p-3.5 text-sm text-white whitespace-nowrap min-w-[112px] hover:bg-blue-600/60 hover:md:translate-x-2 transition-all duration-200 rounded-xl w-36
+  }
+
+.tab {
+    @apply flex-1 items-center gap-1 justify-center p-1.5 text-center inline-flex  rounded-lg
+  }
+  .tab-active {
+    @apply bg-white
+  }
+  .tab-wrapper {
+    @apply  flex bg-slate-200/60 p-1 rounded-xl gap-2 w-full backdrop-blur-xl
+  }
+
+
+[x-cloak] {
+  display: none !important;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
+ .youtube:hover{
+  cursor: pointer;
+  .play {
+    background: red;
+    opacity: 0.9;
+  }
+}
+
+.play {
+  font-size: 1.1em; /* change this to change size */
+  /* transform: translateY(130px); */
+  position: absolute;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+  margin:auto;
+  background: #3b3636;
+  opacity: 0.75;
+  border-radius: 50% / 10%;
+  color: #FFFFFF;
+  height: 3em;
+  padding: 0;
+  text-align: center;
+  text-indent: 0.1em;
+  transition: all 150ms ease-out;
+  width: 4em;
+  z-index: 9;
+}
+
+.play::before {
+  background: inherit;
+  border-radius: 5% / 50%;
+  bottom: 9%;
+  content: "";
+  left: -5%;
+  position: absolute;
+  right: -5%;
+  top: 9%;
+}
+
+.play::after {
+  border-style: solid;
+  border-width: 1em 0 1em 1.732em;
+  border-color: transparent transparent transparent rgba(255, 255, 255, 0.75);
+  content: ' ';
+  font-size: 0.75em;
+  height: 0;
+  margin: -1em 0 0 -0.75em;
+  top: 50%;
+  position: absolute;
+  width: 0;
+}
+
+ .flickr_pagination {
+  margin-top: 12px;
+  text-align: center;
+  padding: 0.3em;
+  cursor: default; }
+  .flickr_pagination a, .flickr_pagination span, .flickr_pagination em {
+    padding: 0.2em 0.5em; 
+    border-radius: 0.5rem;
+
+  }
+  .flickr_pagination .disabled {
+    border: 1px solid #dddddd;
+    color: #c4c4c4; }
+  .flickr_pagination .current {
+    font-style: normal;
+    font-weight: bold;
+    /* color: #4f45e4;  */
+  }
+  .flickr_pagination a {
+    border: 1px solid #dddddd;
+    /* color: #4f45e4; */
+    text-decoration: none; 
+  }
+  .flickr_pagination a:hover, .flickr_pagination a:focus {
+    border-color: #000000;
+    background: #4f4f5e;
+    color: white; }
+  .flickr_pagination .page_info {
+    color: #aaaaaa;
+    padding-top: 0.8em; }
+  .flickr_pagination .previous_page, .flickr_pagination .next_page {
+    border-width: 2px; }
+  .flickr_pagination .previous_page {
+    margin-right: 1em; }
+  .flickr_pagination .next_page {
+    margin-left: 1em; }
+
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+nav{
+    
+  box-shadow: 0px 3px 20px rgb(0, 0, 0);
+  padding: 10px;
+  position:fixed;
+  z-index:10;
+  background: rgba(46, 161, 255, 0.686);
+}
